@@ -1,0 +1,5 @@
+# Ignore everything in bin/Debug
+bin/Debug/*
+
+# But don't ignore bin/Release
+bin/Release/*

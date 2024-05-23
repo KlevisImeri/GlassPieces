@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GlassPieces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2596ae87c4b7364dc62e4817e9e52ed9b6852821")]
 [assembly: System.Reflection.AssemblyProductAttribute("GlassPieces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GlassPieces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

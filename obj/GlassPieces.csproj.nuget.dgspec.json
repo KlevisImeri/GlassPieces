@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\GlassPieces.csproj": {}
+    "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\Code\\GlassPieces.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\GlassPieces.csproj": {
+    "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\Code\\GlassPieces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\GlassPieces.csproj",
+        "projectUniqueName": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\Code\\GlassPieces.csproj",
         "projectName": "GlassPieces",
-        "projectPath": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\GlassPieces.csproj",
+        "projectPath": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\Code\\GlassPieces.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\obj\\",
+        "outputPath": "D:\\Users\\Admin\\Desktop\\PROJECTS\\GlassPieces\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
