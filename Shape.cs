@@ -1,11 +1,13 @@
+using System.Diagnostics;
 using System.Numerics;
 
 
 namespace GlassPieces;
 
 public class Shape : Panel {
-
-  static float minDistance = 4f; //Minimum distance between points in border
+  
+  /*---------------------------Static-------------------------------*/
+  static float minDistance = 2f; //Minimum distance between points in border
   static float connectionThreshold = 1f;
   static int scale = 4;
   public static Connection IsConnected(Shape x, Shape y) {
@@ -14,10 +16,13 @@ public class Shape : Panel {
       connectedPoints = 0
     };
 
+    GlassPieces.WriteLine($"Running the IsConnected for!");
     foreach (PointF pointX in x.border) {
       foreach (PointF pointY in y.border) {
         for (float angle = 0; angle < 2 * Math.PI; angle += 1f) {
           List<PointF> rotatedY = RotatePoints(y.border, pointY, pointX, angle);
+
+          Console.WriteLine($"Angle={angle}");
 
           int totalNumberOfConnectedPoints = CalculateTotalDistance(x.border, pointX, rotatedY, pointY);
 
@@ -78,11 +83,15 @@ public class Shape : Panel {
   static float Distance(PointF p1, PointF p2) {
     return (float)Math.Sqrt(Math.Pow(p1.X - p2.X, 2) + Math.Pow(p1.Y - p2.Y, 2));
   }
+  /*---------------------------Static-------------------------------*/
 
+
+  /*---------------------------Fields-------------------------------*/
   public List<PointF> points = new List<PointF>(); //used for drawing
-
   private Bitmap image; //used for drawing
   public List<PointF> border = new List<PointF>(); //used for caculating
+  /*---------------------------Fields-------------------------------*/
+
   public Shape(string pathToImg, string pathToOutline) {
     BackColor = Color.RoyalBlue;
     Size = new Size(6016 / scale, 4016 / scale); //set size so image fits
@@ -107,7 +116,6 @@ public class Shape : Panel {
         }
       }
     }
-
 
     if (points.Count > 0) {
       GenerateBorderPoints();
