@@ -1,2 +1,2 @@
 # GlassPieces
-Program that contruct the galls from broken pieces.
+Program that contructs the glass from broken pieces.
